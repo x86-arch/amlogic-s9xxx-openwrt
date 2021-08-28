@@ -363,14 +363,14 @@ make_image() {
     SIZE=$((SKIP_MB + BOOT_MB + rootsize))
 
     #fallocate -l $((SKIP_MB + BOOT_MB + rootsize))M ${build_image_file}
-    dd if=/dev/zero of=${build_image_file} bs=1M count=${SIZE}
-    loop_setup ${build_image_file}
+    dd if=/dev/zero of=${build_image_file} bs=1M count=${SIZE} 2>/dev/null
 
     parted -s ${build_image_file} mklabel msdos 2>/dev/null
     parted -s ${build_image_file} mkpart primary fat32 $((SKIP_MB))M $((SKIP_MB + BOOT_MB -1))M 2>/dev/null
     parted -s ${build_image_file} mkpart primary btrfs $((SKIP_MB + BOOT_MB))M 100% 2>/dev/null
     parted -s ${build_image_file} print 2>/dev/null
-   
+
+    loop_setup ${build_image_file}
     mkfs.vfat -n "BOOT" ${loop}p1 >/dev/null 2>&1
     mkfs.btrfs -U ${ROOTFS_UUID} -L "ROOTFS" -m single ${loop}p2 >/dev/null 2>&1
 
