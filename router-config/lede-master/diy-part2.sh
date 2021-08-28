@@ -47,9 +47,15 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # Add to compile options (Add related dependencies according to the requirements of the third-party software package Makefile)
 # sed -i "/DEFAULT_PACKAGES/ s/$/ pirania-app pirania ip6tables-mod-nat ipset shared-state-pirania uhttpd-mod-lua/" target/linux/armvirt/Makefile
 
-svn co https://github.com/vernesong/OpenClash/{luci-app-openclash} package/OpenClash/packages
+git clone https://github.com/xiaorouji/openwrt-passwall.git
 
-svn co https://github.com/xiaorouji/openwrt-passwall/{luci-app-passwall} package/openwrt-passwall/packages
+git clone https://github.com/vernesong/OpenClash.git
+
+svn co https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash/ package/luci-app-openclash
+
+svn co https://github.com/xiaorouji/openwrt-passwall/tree/main/luci-app-passwall package/luci-app-passwall
+
+
 # Apply patch
 # git apply ../router-config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
