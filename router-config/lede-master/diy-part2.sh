@@ -94,6 +94,8 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash/ package/
 
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwal
 
+sed -i "/DEFAULT_PACKAGES/ s/$/ iptables dnsmasq-full ipset coreutils coreutils-nohup bash curl ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap ruby ruby-yaml/" target/linux/armvirt/Makefile
+
 # Apply patch
 # git apply ../router-config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
