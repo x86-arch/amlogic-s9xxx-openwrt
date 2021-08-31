@@ -216,7 +216,7 @@ svn co https://github.com/x86-arch/NueXini_Packages/trunk/wxbase package/wxbase
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/xray-core package/xray-core
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/xray-plugin package/xray-plugin
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-passwall package/luci-app-passwall
-
+svn co https://github.com/giaulo/trunk/luci-app-filebrowser package/luci-app-filebrowser
 # Apply patch
 # git apply ../router-config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
