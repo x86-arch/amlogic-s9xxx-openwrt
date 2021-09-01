@@ -196,7 +196,7 @@ svn co https://github.com/x86-arch/NueXini_Packages/trunk/shadowsocks-rust packa
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/shadowsocksr-libev package/shadowsocksr-libev
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/simple-obfs package/simple-obfs
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/smartdns package/smartdns
-svn co https://github.com/x86-arch/NueXini_Packages/trunk/speedtest package/speedtest
+# svn co https://github.com/x86-arch/NueXini_Packages/trunk/speedtest package/speedtest
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/srelay package/srelay
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/ssocks package/ssocks
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/tcping package/tcping
