@@ -98,7 +98,7 @@ svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-diskman packa
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-dnsforwarder package/luci-app-dnsforwarder
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-docker package/luci-app-docker
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-dockerman package/luci-app-dockerman
-svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-easymesh package/luci-app-easymesh
+# svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-easymesh package/luci-app-easymesh
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-eqos package/luci-app-eqos
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-familycloud package/luci-app-familycloud
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-app-filetransfer package/luci-app-filetransfer
