@@ -51,7 +51,7 @@ svn co https://github.com/x86-arch/NueXini_Packages/trunk/UnblockNeteaseMusic-Go
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/UnblockNeteaseMusic package/UnblockNeteaseMusic
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/adbyby package/adbyby
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/adguardhome package/adguardhome
-svn co https://github.com/x86-arch/NueXini_Packages/trunk/amule package/amule
+# svn co https://github.com/x86-arch/NueXini_Packages/trunk/amule package/amule
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/antileech package/antileech
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/autocore package/autocore
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/automount package/automount
