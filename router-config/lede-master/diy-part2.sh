@@ -97,7 +97,7 @@ svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-theme-netgear pac
 svn co https://github.com/x86-arch/NueXini_Packages/trunk/luci-theme-rosy package/luci-theme-rosy
 svn co https://github.com/giaulo/luci-app-filebrowser/trunk package/luci-app-filebrowser
 
-sed -i "/DEFAULT_PACKAGES/ s/$/ coreutils coreutils-base64 coreutils-nohup curl dnsmasq-full dns2socks ipset ip-full ipt2socks iptables-mod-tproxy libuci-lua lua luci-lib-jsonc microsocks tcping resolveip unzip libpthread iptables bash ca-certificates iptables-mod-extra libcap ruby ruby-yaml/" target/linux/armvirt/Makefile
+sed -i "/DEFAULT_PACKAGES/ s/$/ coreutils python3-markdown coreutils-base64 coreutils-nohup curl dnsmasq-full dns2socks ipset ip-full ipt2socks iptables-mod-tproxy libuci-lua lua luci-lib-jsonc microsocks tcping resolveip unzip libpthread iptables bash ca-certificates iptables-mod-extra libcap ruby ruby-yaml/" target/linux/armvirt/Makefile
 
 #sed -i "/DEFAULT_PACKAGES/ s/$/ iptables dnsmasq-full ipset coreutils coreutils-nohup bash curl ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap ruby ruby-yaml/" target/linux/armvirt/Makefile
 
